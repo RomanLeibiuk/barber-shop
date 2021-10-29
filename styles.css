@@ -1,0 +1,203 @@
+/* Палитра цветов
+Доп цвет текста #9DA4BD
+Главный белый цвет #FFFFFF 
+Дополнительный цвет текста   rgba(157, 164, 189, 0.6);
+Дополнительный цвет текста  #303030
+Цвет при наведении #FF6C00
+дополнительный цвет фона #F7F7F7
+ Главный Цвет текста #555555
+
+
+
+*/
+:root {
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #f7f7f7;
+  --primary-title-color: #303030;
+  --primary-text-color: #555555;
+  --secondary-text-color: #9da4bd;
+  --third-text-color: rgba(157, 164, 189, 0.6);
+  --accent: #ff6c00;
+}
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
+  font-family: "Open Sans", sans-serif, "Raleway", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+.section-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: var(--primary-title-color);
+}
+.pretitle-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+}
+.under-title-text {
+  font-size: 18px;
+  line-height: 1.67;
+}
+.header {
+  background-color: wheat;
+}
+/* ============Разметка Навигации============ */
+.site-nav .link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent);
+}
+.tel-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.tel-link:hover,
+.tel-link:focus {
+  color: var(--accent);
+}
+.button {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 1px solid #ff6c00;
+  box-sizing: border-box;
+  border-radius: 25px;
+  cursor: pointer;
+}
+/* ============Разметка Соц Сетей ============*/
+.social-list .link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: var(--primary-title-color);
+}
+.social-list .link:hover,
+.social-list .link:focus {
+  color: var(--accent);
+}
+/* ============Разметка Героя============ */
+.delete {
+  background-color: wheat;
+}
+.hero-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: var(--primary-background-color);
+}
+.hero .pretitle-text {
+  color: var(--third-text-color);
+}
+.hero .under-title-text {
+  color: var(--secondary-text-color);
+}
+/* ===========Разметка секции О нас========= */
+.about .text {
+  color: var(--primary-title-color);
+}
+.about .under-title-text,
+.about .text {
+  color: var(--primary-text-color);
+}
+.about .text {
+  font-size: 14px;
+  line-height: 1.86;
+}
+/*========= Разметка секции Услуги и цены======== */
+.prices {
+  background-color: wheat;
+}
+
+.prices .pretitle-text {
+  color: var(--third-text-color);
+}
+.prices .section-title {
+  color: var(--primary-background-color);
+}
+.prices .price-list {
+  font-size: 18px;
+  line-height: 1.67;
+  color: var(--secondary-text-color);
+}
+
+/* ===============Разметка секции Почему мы?============ */
+.review .number {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.35;
+  letter-spacing: 0.05em;
+  color: var(--primary-title-color);
+}
+.review .text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: var(--primary-title-color);
+}
+
+/* =============Разметка Наших Мастеров=========== */
+.masters-list .masters-title {
+  font-size: 18px;
+  line-height: 1.38;
+  color: var(--primary-title-color);
+}
+.masters-list .masters-name {
+  font-size: 14px;
+  line-height: 1.35;
+  color: var(--accent);
+}
+/* ===============Разметка секции Онлайн Запись-----========= */
+.register .section-title {
+  color: var(--primary-background-color);
+}
+.contacts .section-title {
+  color: var(--primary-background-color);
+}
+.contacts .link,
+.contacts .text {
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--secondary-text-color);
+}
+.contacts .mail {
+  text-decoration-line: underline;
+}
+.contacts .pretitle-text {
+  color: var(--primary-background-color);
+}
+/*================== Разметка Футера ==================*/
+.footer .text {
+  font-size: 11px;
+  line-height: 15px;
+  color: var(--secondary-text-color);
+}
