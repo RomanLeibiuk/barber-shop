@@ -26,6 +26,13 @@ body {
   letter-spacing: 0.02em;
 }
 
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .list {
   list-style: none;
 }
@@ -53,10 +60,28 @@ body {
   font-size: 18px;
   line-height: 1.67;
 }
-.header {
-  background-color: wheat;
-}
+
 /* ============Разметка Навигации============ */
+.header-container {
+  display: flex;
+  align-items: center;
+  background-color: #191c26;
+}
+.site-nav {
+  display: flex;
+  margin-left: 69.4px;
+}
+.site-nav .list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.site-nav .item {
+  margin-right: 39.99px;
+}
+.site-nav .item:last-of-type {
+  margin: 0;
+}
 .site-nav .link {
   font-weight: 600;
   font-size: 12px;
@@ -67,6 +92,14 @@ body {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent);
+}
+.contact {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+.contact .tel-link {
+  margin-right: 39.99px;
 }
 .tel-link {
   font-weight: 600;
@@ -81,16 +114,19 @@ body {
   color: var(--accent);
 }
 .button {
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  padding: 12px 19.99px;
+
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #ffffff;
-  border: 1px solid #ff6c00;
-  box-sizing: border-box;
-  border-radius: 25px;
+
   cursor: pointer;
+  background-color: transparent;
 }
 /* ============Разметка Соц Сетей ============*/
 .social-list .link {
@@ -186,7 +222,7 @@ body {
 .contacts .link,
 .contacts .text {
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.66;
   color: var(--secondary-text-color);
 }
 .contacts .mail {
